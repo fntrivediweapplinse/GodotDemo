@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5qr1wa0v1f5x"]
+
+[ext_resource type="Texture2D" uid="uid://doarae712mg2e" path="res://Assets/pixel_ship_red.png" id="1_owq46"]
+
+[node name="Enemy" type="Node2D"]
+
+[node name="EnemySprite" type="Sprite2D" parent="."]
+rotation = 3.14159
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_owq46")

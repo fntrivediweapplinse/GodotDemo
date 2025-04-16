@@ -1,0 +1,149 @@
+[gd_scene load_steps=8 format=3 uid="uid://du7b3croh6x36"]
+
+[ext_resource type="Script" uid="uid://d2v8xxjge23rl" path="res://Main Menu/mainmenu.gd" id="1_3fxpk"]
+[ext_resource type="Texture2D" uid="uid://clrj0e2qgys51" path="res://Assets/Menu/bg2.png" id="2_3fxpk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_chbck"]
+texture = ExtResource("2_3fxpk")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i5gqy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i5gqy"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_chbck"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fj2vo"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2, 3)
+
+[node name="MainManu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3fxpk")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_chbck")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 176.0
+offset_top = 312.0
+offset_right = -136.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 15
+
+[node name="StartGame" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i5gqy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i5gqy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_chbck")
+theme_override_styles/normal = SubResource("StyleBoxFlat_fj2vo")
+text = "Horizontal move"
+
+[node name="InputTransfer" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i5gqy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i5gqy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_chbck")
+theme_override_styles/normal = SubResource("StyleBoxFlat_fj2vo")
+text = "Input Transfer"
+
+[node name="Move Object" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i5gqy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i5gqy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_chbck")
+theme_override_styles/normal = SubResource("StyleBoxFlat_fj2vo")
+text = "Move Object"
+
+[node name="UI Components" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i5gqy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i5gqy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_chbck")
+theme_override_styles/normal = SubResource("StyleBoxFlat_fj2vo")
+text = "UI Components"
+
+[node name="Exit" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i5gqy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i5gqy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_chbck")
+theme_override_styles/normal = SubResource("StyleBoxFlat_fj2vo")
+text = "Exit"
+
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/StartGame" to="." method="_on_start__pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/InputTransfer" to="." method="_on_input_transfer_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/Move Object" to="." method="_on_move_object_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/UI Components" to="." method="_on_ui_components_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/Exit" to="." method="_on_start_exit_pressed"]

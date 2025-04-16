@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://cpblbq4dr6cxx"]
+
+[ext_resource type="Texture2D" uid="uid://coq6ulbb2ued5" path="res://Assets/Sprite Move/car.png" id="1_b34c2"]
+[ext_resource type="Texture2D" uid="uid://bbjaji80bwcxl" path="res://Assets/Sprite Move/bg.jpg" id="1_dah35"]
+[ext_resource type="Script" uid="uid://2h283l35bd6u" path="res://MoveSprite/sprite_2d.gd" id="2_8wxrm"]
+[ext_resource type="Texture2D" uid="uid://cacp6t2ernyy2" path="res://Assets/Shooter/left.png" id="3_6518n"]
+[ext_resource type="Texture2D" uid="uid://bwy4g0hxk8w66" path="res://Assets/Shooter/right.png" id="4_kllmf"]
+[ext_resource type="Texture2D" uid="uid://defa6mnje3ggk" path="res://Assets/Shooter/up.png" id="5_lmxh2"]
+[ext_resource type="Texture2D" uid="uid://dq2hf4ub5lmte" path="res://Assets/Shooter/down.png" id="6_dah35"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(360.25, 640.75)
+scale = Vector2(0.978912, 3.09564)
+texture = ExtResource("1_dah35")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(368, 616)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_b34c2")
+script = ExtResource("2_8wxrm")
+
+[node name="CarControls" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 368.0
+offset_top = 616.0
+offset_right = 408.0
+offset_bottom = 656.0
+
+[node name="Left" type="TouchScreenButton" parent="CarControls"]
+position = Vector2(-168, 445)
+scale = Vector2(1.6, 1.6)
+texture_normal = ExtResource("3_6518n")
+action = "ui_left"
+
+[node name="Right" type="TouchScreenButton" parent="CarControls"]
+position = Vector2(32, 447)
+scale = Vector2(1.6, 1.6)
+texture_normal = ExtResource("4_kllmf")
+action = "ui_right"
+
+[node name="Up" type="TouchScreenButton" parent="CarControls"]
+position = Vector2(-68, 359)
+scale = Vector2(1.6, 1.6)
+texture_normal = ExtResource("5_lmxh2")
+action = "ui_up"
+
+[node name="Down" type="TouchScreenButton" parent="CarControls"]
+position = Vector2(-69, 534)
+scale = Vector2(1.6, 1.6)
+texture_normal = ExtResource("6_dah35")
+action = "ui_down"

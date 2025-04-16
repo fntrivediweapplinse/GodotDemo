@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://beywpitcfcl77"]
+
+[ext_resource type="Script" uid="uid://cbdcfml2pwyqn" path="res://UI Comps/Checkbox/checkbox.gd" id="1_6td1d"]
+[ext_resource type="Texture2D" uid="uid://clrj0e2qgys51" path="res://Assets/Menu/bg2.png" id="1_dlpba"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6td1d"]
+texture = ExtResource("1_dlpba")
+
+[sub_resource type="LabelSettings" id="LabelSettings_6td1d"]
+font_size = 50
+
+[node name="checkbox" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6td1d")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6td1d")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = -155.5
+offset_right = -40.0
+offset_bottom = -54.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+
+[node name="option 1" type="CheckBox" parent="VBoxContainer"]
+layout_mode = 2
+text = "Testing"
+
+[node name="option 2" type="CheckBox" parent="VBoxContainer"]
+layout_mode = 2
+text = "Testing"
+
+[node name="option 3" type="CheckBox" parent="VBoxContainer"]
+layout_mode = 2
+text = "Testing"
+
+[node name="result" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -87.5
+offset_top = -448.0
+offset_right = 87.5
+offset_bottom = -379.0
+grow_horizontal = 2
+grow_vertical = 0
+label_settings = SubResource("LabelSettings_6td1d")
+
+[connection signal="toggled" from="VBoxContainer/option 1" to="." method="_on_option_1_toggled"]
+[connection signal="toggled" from="VBoxContainer/option 2" to="." method="_on_option_2_toggled"]
+[connection signal="toggled" from="VBoxContainer/option 3" to="." method="_on_option_3_toggled"]

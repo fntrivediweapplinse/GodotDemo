@@ -1,0 +1,568 @@
+[gd_scene load_steps=8 format=3 uid="uid://bwp6vd36un7sq"]
+
+[ext_resource type="Texture2D" uid="uid://clrj0e2qgys51" path="res://Assets/Menu/bg2.png" id="1_yp0re"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1gaca"]
+texture = ExtResource("1_yp0re")
+
+[sub_resource type="LabelSettings" id="LabelSettings_yp0re"]
+font_size = 50
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yp0re"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1gaca"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cbmuu"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m4o7j"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(2, 3)
+
+[node name="Scolldemo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_1gaca")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 40.0
+offset_right = 570.0
+offset_bottom = 109.0
+text = "Vertical Scrollbar"
+label_settings = SubResource("LabelSettings_yp0re")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 160.0
+offset_top = 160.0
+offset_right = -152.0
+offset_bottom = -608.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 15
+
+[node name="btn" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "1"
+
+[node name="btn2" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "2"
+
+[node name="btn3" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "3"
+
+[node name="btn4" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "4"
+
+[node name="btn5" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "5"
+
+[node name="btn6" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "6"
+
+[node name="btn7" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "7"
+
+[node name="btn8" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "8"
+
+[node name="btn9" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "9"
+
+[node name="btn10" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "10"
+
+[node name="btn11" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "11"
+
+[node name="btn12" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "12"
+
+[node name="btn13" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "13"
+
+[node name="btn14" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "14"
+
+[node name="btn15" type="Button" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "15"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -239.5
+offset_top = 69.5
+offset_right = 239.5
+offset_bottom = 138.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Horizontal Scrollbar"
+label_settings = SubResource("LabelSettings_yp0re")
+
+[node name="ScrollContainer2" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 824.0
+offset_right = -16.0
+offset_bottom = -240.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer2"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+theme_override_constants/separation = 15
+
+[node name="btn" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "1"
+
+[node name="btn2" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "2"
+
+[node name="btn3" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "3"
+
+[node name="btn4" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "4"
+
+[node name="btn5" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "5"
+
+[node name="btn6" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "6"
+
+[node name="btn7" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "7"
+
+[node name="btn8" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "8"
+
+[node name="btn9" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "9"
+
+[node name="btn10" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "10"
+
+[node name="btn11" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "11"
+
+[node name="btn12" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "12"
+
+[node name="btn13" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "13"
+
+[node name="btn14" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "14"
+
+[node name="btn15" type="Button" parent="ScrollContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yp0re")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1gaca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cbmuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4o7j")
+text = "15"
